@@ -19,14 +19,14 @@ const PageUsers = async () => {
 
     return (
         <section className='text-center flex flex-col items-center justify-center min-h-screen'>
-            <h1 className='text-lg font-bold'>This data comes from: <a
+            <h1 className='text-lg font-bold'>This list comes from: <a
                 href="https://jsonplaceholder.typicode.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='hover:text-amber-100'>https://jsonplaceholder.typicode.com</a>
+                className='hover:text-amber-100 underline'>https://jsonplaceholder.typicode.com</a>
             </h1>
 
-            <p className="pb-4 text-amber-100">A web site to check REST API</p>
+            <p className="pb-4 text-amber-100">A web site to check REST APIs functionability</p>
             <div className={style.usersCard}>
                 <ul>
                     {users.map(user => <li key={user.id}>{user.name} : {user.email} </li>
@@ -35,7 +35,7 @@ const PageUsers = async () => {
             </div>
             <div className='text-center p-4'>
                 <ButtonAdd
-                    label="Go back"
+                    label="Go back to landing page"
                     href="/"
                 />
             </div>
